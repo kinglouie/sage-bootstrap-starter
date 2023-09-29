@@ -23,7 +23,7 @@ export default async (app) => {
    *
    * @see {@link https://bud.js.org/docs/bud.setPublicPath}
    */
-  app.setPublicPath('/app/themes/sage/public/');
+  app.setPublicPath('/wp-content/themes/sage-bootstrap-starter/public/');
 
   /**
    * Development server settings
@@ -33,8 +33,13 @@ export default async (app) => {
    * @see {@link https://bud.js.org/docs/bud.watch}
    */
   app
-    .setUrl('http://localhost:3000')
-    .setProxyUrl('http://example.test')
+    //.setUrl('http://0.0.0.0:3000') // not needed
+    .proxy('http://appserver', [
+      ['https://sage-bootstrap-starter.lndo.site', 'http://theme.sage-bootstrap-starter.lndo.site'],
+    ])
+    .setPublicUrl('http://theme.sage-bootstrap-starter.lndo.site')
+    .setProxyUrl('http://appserver')
+    .setPublicProxyUrl('http://sage-bootstrap-starter.lndo.site')
     .watch(['resources/views', 'app']);
 
   /**
