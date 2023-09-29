@@ -40,6 +40,7 @@
   },
   "require": {
     "php": "^8.0",
+    "garrettweinberg/sage-bootstrap5-navwalker": "^1.4",
     "roots/acorn": "^3.2"
   },
   "require-dev": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dd497165255ab1eab7993274b5c0796",
+    "content-hash": "ecb67e9c8d1c0712c46d425d087b47bd",
     "packages": [
         {
             "name": "brick/math",
@@ -222,6 +222,53 @@
                 }
             ],
             "time": "2022-02-20T15:07:15+00:00"
+        },
+        {
+            "name": "garrettweinberg/sage-bootstrap5-navwalker",
+            "version": "1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GarrettWeinberg/sage-bootstrap5-navwalker.git",
+                "reference": "72b39cb1fe1bd2d1324686d6c51db160e588eb1c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GarrettWeinberg/sage-bootstrap5-navwalker/zipball/72b39cb1fe1bd2d1324686d6c51db160e588eb1c",
+                "reference": "72b39cb1fe1bd2d1324686d6c51db160e588eb1c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap5-navwalker.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Garrett Weinberg",
+                    "email": "weinberg135@gmail.com"
+                }
+            ],
+            "description": "Bootstrap 5 Navbar component navwalker for Sage 10 based themes",
+            "homepage": "https://github.com/garrettweinberg/sage-bootstrap5-navwalker",
+            "keywords": [
+                "Bootstrap 5",
+                "navbar",
+                "navwalker",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/GarrettWeinberg/sage-bootstrap5-navwalker/issues",
+                "source": "https://github.com/GarrettWeinberg/sage-bootstrap5-navwalker/tree/1.4"
+            },
+            "time": "2022-10-26T14:03:46+00:00"
         },
         {
             "name": "graham-campbell/result-type",
