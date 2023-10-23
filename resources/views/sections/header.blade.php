@@ -1,4 +1,4 @@
-<header class="header-default bg-dark">
+<header class="header-default text-bg-dark">
   <nav class="navbar navbar-expand-xxl" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
     <div class="container-xxl position-relative">
 
@@ -10,9 +10,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div id="offcanvasNavbar" class="offcanvas offcanvas-end bg-dark">
+      <div id="offcanvasNavbar" class="offcanvas offcanvas-end text-bg-dark">
         <div class="offcanvas-header">
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           @if (has_nav_menu('primary_navigation'))
