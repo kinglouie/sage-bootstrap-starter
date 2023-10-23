@@ -1,8 +1,8 @@
 {{--
-  Template Name: Custom Template
+  Template Name: Full Width
 --}}
 
-@extends('layouts.app')
+@extends('layouts.app-full-width')
 
 @section('content')
   @while(have_posts()) @php(the_post())
