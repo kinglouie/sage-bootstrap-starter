@@ -49,6 +49,11 @@ git clone http://github.com/kinglouie/sage-bootstrap-starter
 
 ## 3. Install Plugin All Bootstrap Blocks by AREOI
 
+- Install the Plugin
+- Update the Plugin Settings
+  - Remove checkbox `Include Bootstrap CSS`
+  - Remove checkbox `Include Bootstrap JS`
+
 ## 4. Update lando config
 
 To use the sage dev server and live reloading features, the lando config needs to be updated. Here is an example config:
@@ -86,6 +91,6 @@ The public and proxy urls in `bud.config.js` need to be in sync with the wordpre
 
 ---
 
-# Theme Settings
+# Theme Development
 
-TODO
+- Whenever bootstrap variables are changed in `_variables.scss` you need to enable the checkbox  `Include Bootstrap CSS` in the plugin settings of All Bootstrap Blocks to recompile the gutenberg css, after recompilation, disable the checkbox again
