@@ -75,5 +75,6 @@ export default async (app) => {
       typography: {
         customFontSize: false,
       },
-    });
+    })
+    .enable();
 };
