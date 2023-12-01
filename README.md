@@ -1,6 +1,6 @@
 # Dev setup with lando for local development
 
-## 1. Create empty wordpress installation 
+## 1. Create empty wordpress installation
 
 from lando[wordpress recipe docs](https://docs.lando.dev/wordpress/getting-started.html)
 
@@ -57,6 +57,7 @@ git clone http://github.com/kinglouie/sage-bootstrap-starter
 ## 4. Update lando config
 
 To use the sage dev server and live reloading features, the lando config needs to be updated. Here is an example config:
+
 ```
 name: sage-bootstrap-starter
 recipe: wordpress
@@ -71,7 +72,11 @@ services:
     command: cd wordpress/wp-content/themes/sage-bootstrap-starter && yarn dev
 
 tooling:
+  composer:
+    dir: /app/wordpress/wp-content/themes/sage-bootstrap-starter
+    service: appserver
   yarn:
+    dir: /app/wordpress/wp-content/themes/sage-bootstrap-starter
     service: theme
 
 proxy:
@@ -79,7 +84,9 @@ proxy:
     - theme.sage-bootstrap-starter.lndo.site:3000
 
 ```
+
 ## 5. run first build
+
 `cd` into theme directory
 run `lando composer install` to install php theme dependencies
 run `lando yarn` to install node theme dependencies
@@ -93,4 +100,4 @@ The public and proxy urls in `bud.config.js` need to be in sync with the wordpre
 
 # Theme Development
 
-- Whenever bootstrap variables are changed in `_variables.scss` you need to enable the checkbox  `Include Bootstrap CSS` in the plugin settings of All Bootstrap Blocks to recompile the gutenberg css, after recompilation, disable the checkbox again
+- Whenever bootstrap variables are changed in `_variables.scss` you need to enable the checkbox `Include Bootstrap CSS` in the plugin settings of All Bootstrap Blocks to recompile the gutenberg css, after recompilation, disable the checkbox again
