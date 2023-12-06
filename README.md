@@ -85,6 +85,8 @@ proxy:
 
 ```
 
+run `lando rebuild` to let changes to `.lando.yml` take effect
+
 ## 5. run first build
 
 `cd` into theme directory
